@@ -3,9 +3,6 @@
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.UI.WebApi.runtimeconfig.dev.json
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.UI.WebApi.dll
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.UI.WebApi.pdb
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/obj/Debug/netcoreapp1.1/Project.UI.WebApi.AssemblyInfo.cs
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/obj/Debug/netcoreapp1.1/Project.UI.WebApi.dll
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/obj/Debug/netcoreapp1.1/Project.UI.WebApi.pdb
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.Application.dll
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.Domain.Core.dll
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.Domain.dll
@@ -14,3 +11,6 @@
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.Domain.pdb
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.Domain.Core.pdb
 /Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/bin/Debug/netcoreapp1.1/Project.Infrastructure.pdb
+/Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/obj/Debug/netcoreapp1.1/Project.UI.WebApi.AssemblyInfo.cs
+/Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/obj/Debug/netcoreapp1.1/Project.UI.WebApi.dll
+/Users/Brum/Documents/work/_git/core-vscode/src/Project.UI.WebApi/obj/Debug/netcoreapp1.1/Project.UI.WebApi.pdb

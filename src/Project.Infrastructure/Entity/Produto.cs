@@ -1,4 +1,4 @@
-namespace Project.Domain.Entity
+namespace Project.Infrastructure.Entity
 {
     public class Produto
     {

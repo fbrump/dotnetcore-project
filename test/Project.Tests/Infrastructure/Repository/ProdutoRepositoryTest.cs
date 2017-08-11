@@ -8,7 +8,7 @@ namespace Project.Tests.Infrastructure.Repository
         [Fact]
         public void Should_inser_new_product()
         {
-
+            
         }
 
     }
