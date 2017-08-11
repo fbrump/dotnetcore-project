@@ -49,3 +49,16 @@ msbuild.wrn
 
 # Visual Studio 2015
 .vs/
+src/Project.Application/bin/
+src/Project.Application/obj/
+src/Project.Domain/bin/
+src/Project.Domain/obj/
+src/Project.Domain.Core/bin/
+src/Project.Domain.Core/obj/
+src/Project.Infrastructure/obj/
+src/Project.Infrastructure/bin/
+src/Project.UI.Web/bin/
+src/Project.UI.Web/obj/
+src/Project.UI.WebApi/bin/
+src/Project.UI.WebApi/obj/
+
