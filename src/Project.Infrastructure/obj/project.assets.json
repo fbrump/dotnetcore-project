@@ -5885,6 +5885,7 @@
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v1.4": [
       "Microsoft.EntityFrameworkCore >= 1.1.2",
+      "Microsoft.EntityFrameworkCore.Tools.DotNet >= 1.1.1",
       "NETStandard.Library >= 1.6.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 1.1.1",
       "Project.Domain.Core >= 1.0.0"
@@ -5927,6 +5928,10 @@
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "1.1.2"
+          },
+          "Microsoft.EntityFrameworkCore.Tools.DotNet": {
+            "target": "Package",
+            "version": "1.1.1"
           },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",

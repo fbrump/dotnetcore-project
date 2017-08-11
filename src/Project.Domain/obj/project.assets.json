@@ -1711,6 +1711,7 @@
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "1.1.2",
+          "Microsoft.EntityFrameworkCore.Tools.DotNet": "1.1.1",
           "NETStandard.Library": "1.6.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.1",
           "Project.Domain.Core": "1.0.0"

@@ -6,10 +6,10 @@
 /Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Tests.runtimeconfig.dev.json
 /Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Tests.dll
 /Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Tests.pdb
-/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.AssemblyInfo.cs
-/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.dll
-/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.pdb
 /Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Domain.Core.dll
 /Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Infrastructure.dll
 /Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Infrastructure.pdb
 /Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Domain.Core.pdb
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.AssemblyInfo.cs
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.dll
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.pdb
