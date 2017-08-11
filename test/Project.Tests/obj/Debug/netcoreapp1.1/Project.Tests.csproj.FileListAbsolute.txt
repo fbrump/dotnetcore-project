@@ -1,0 +1,11 @@
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/xunit.runner.utility.netstandard15.dll
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/xunit.runner.reporters.netstandard15.dll
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Tests.deps.json
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Tests.runtimeconfig.json
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Tests.runtimeconfig.dev.json
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Tests.dll
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/bin/Debug/netcoreapp1.1/Project.Tests.pdb
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.AssemblyInfo.cs
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.dll
+/Users/Brum/Documents/work/_git/core-vscode/test/Project.Tests/obj/Debug/netcoreapp1.1/Project.Tests.pdb
