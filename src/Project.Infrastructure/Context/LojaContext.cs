@@ -7,7 +7,13 @@ namespace Project.Infrastructure.Context
     public class LojaContext : DbContext
     {
         
+
         public DbSet<Produto> Produtos { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseNpgsql("Host=localhost;Database=loja_db;Username=user_loja;Password=admin123");
+        }
 
     }
 }

@@ -18,7 +18,8 @@ namespace Project.Tests.Infrastructure.Repository
 
             using (var ctx = new LojaContext())
             {
-                
+                ctx.Produtos.Add(produto);
+                ctx.SaveChanges();
             }
 
         }
