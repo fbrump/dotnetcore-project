@@ -1,6 +1,0 @@
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/bin/Debug/netstandard1.4/Project.Domain.Core.deps.json
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/bin/Debug/netstandard1.4/Project.Domain.Core.dll
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/bin/Debug/netstandard1.4/Project.Domain.Core.pdb
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/obj/Debug/netstandard1.4/Project.Domain.Core.AssemblyInfo.cs
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/obj/Debug/netstandard1.4/Project.Domain.Core.dll
-/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/obj/Debug/netstandard1.4/Project.Domain.Core.pdb
