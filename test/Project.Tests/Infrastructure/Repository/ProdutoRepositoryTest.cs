@@ -4,10 +4,11 @@ namespace Project.Tests.Infrastructure.Repository
     using Project.Infrastructure.Context;
     using Project.Infrastructure.Entity;
     using Xunit;
+
     public class ProdutoRepositoryTest
     {
         
-        [Fact]
+        [Fact(Skip="Ignored - Access data base")]
         public void Should_insert_new_product()
         {
             var produto = new Produto();
