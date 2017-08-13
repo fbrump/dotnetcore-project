@@ -5,9 +5,18 @@ namespace Project.Tests.Infrastructure.Repository
     using Project.Infrastructure.Entity;
     using Xunit;
 
-    public class ProdutoRepositoryTest
+    public class ProdutoRepositoryTest : IDisposable
     {
-        
+        public ProdutoRepositoryTest()
+        {
+            Console.WriteLine("TestFixtureSetUp");
+        }
+
+        public void Dispose()
+        {
+            Console.WriteLine("TestFixtureTearDown");
+        }
+
         [Fact(Skip="Ignored - Access data base")]
         public void Should_insert_new_product()
         {
@@ -24,6 +33,7 @@ namespace Project.Tests.Infrastructure.Repository
             }
 
         }
+        
 
     }
 }
