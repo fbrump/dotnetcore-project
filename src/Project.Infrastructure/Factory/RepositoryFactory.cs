@@ -15,14 +15,11 @@ namespace Project.Infrastructure.Factory
             _container = new LightInject.ServiceContainer();
             
             // REGISTER ALL REPOSITORIES
-            _container.Register<IProdutoRepository>(factory => new ProdutoRepository(new LojaContext()));
-
-            //_container.RegisterInstance<IProdutoRepository>(new ProdutoRepository(new LojaContext()));
-
-            //_container.Register<IProdutoRepository, ProdutoRepository>();
-
-            //_container.RegisterConstructorDependency<IProdutoRepository>((factory, parameterInfo) => new LojaContext());
+            _container.Register<IProdutoRepository>(factory => new ProdutoRepository(GetContext()));
+            
         }
+
+        internal static LojaContext GetContext() => new LojaContext();
 
         /// <summary>
         /// Method that get one instance for Repostiory based on yout interface.

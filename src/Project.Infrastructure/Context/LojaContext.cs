@@ -6,8 +6,6 @@ namespace Project.Infrastructure.Context
 
     public class LojaContext : DbContext
     {
-        
-
         public DbSet<Produto> Produtos { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
