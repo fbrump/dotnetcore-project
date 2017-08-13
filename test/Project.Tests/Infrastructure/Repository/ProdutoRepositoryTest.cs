@@ -4,20 +4,28 @@ namespace Project.Tests.Infrastructure.Repository
     using Project.Infrastructure.Context;
     using Project.Infrastructure.Entity;
     using Xunit;
+    using System.Linq;
+    using System.Collections;
+    using System.Collections.Generic;
+
 
     public class ProdutoRepositoryTest : IDisposable
     {
         public ProdutoRepositoryTest()
         {
-            Console.WriteLine("TestFixtureSetUp");
+            Console.WriteLine("========= ==================");
+            Console.WriteLine("========= TestFixtureSetUp");
+            Console.WriteLine("========= ==================");
         }
 
         public void Dispose()
         {
-            Console.WriteLine("TestFixtureTearDown");
+            Console.WriteLine("========= ==================");
+            Console.WriteLine("========= TestFixtureTearDown");
+            Console.WriteLine("========= ==================");
         }
 
-        [Fact(Skip="Ignored - Access data base")]
+        [Fact]
         public void Should_insert_new_product()
         {
             var produto = new Produto();
@@ -33,7 +41,38 @@ namespace Project.Tests.Infrastructure.Repository
             }
 
         }
+
+        [Fact]
+        public void Should_select_items()
+        {
+            //Given
+            var list = new List<Produto>();
+
+            //When
+            using (var ctx = new LojaContext())
+            {
+                list = ctx.Produtos.ToList();
+            }
         
+            //Then
+            Assert.True(list.Count() > 0);
+        }
+
+        [Fact]
+        public void Should_update_product()
+        {
+            using (var ctx = new LojaContext())
+            {
+                var produto = ctx.Produtos.LastOrDefault();
+
+                produto.Nome = "Harry Potter - Update";
+
+                ctx.Produtos.Update(produto);
+                ctx.SaveChanges();
+            }
+
+        }
+
 
     }
 }
