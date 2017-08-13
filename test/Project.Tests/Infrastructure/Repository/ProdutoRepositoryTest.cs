@@ -11,12 +11,12 @@ namespace Project.Tests.Infrastructure.Repository
     using System.Collections.Generic;
 
 
-    public class ProdutoRepositoryTest : IDisposable
+    public class ProdutoRepositoryTest : BaseTest, IDisposable
     {
         private IProdutoRepository _repository;
         private LojaContext _context;
 
-        public ProdutoRepositoryTest()
+        public ProdutoRepositoryTest() : base()
         {
             _context = new LojaContext();
             _repository = new ProdutoRepository(_context);
@@ -99,6 +99,14 @@ namespace Project.Tests.Infrastructure.Repository
             Assert.Null(produto);
         }
 
-
+        [Fact]
+        public void Should_get_connection_string_from_json_appsettings()
+        {
+            //Given
+            System.Console.WriteLine(base._configuration.Configuration);
+            //When
+            
+            //Then
+        }
     }
 }

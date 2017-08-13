@@ -6,9 +6,9 @@ namespace Project.Tests.Infrastructure.Factory
     using Project.Infrastructure.Repository;
     using Project.Infrastructure.Interface;
 
-    public class RepositoryFactoryTest : IDisposable
+    public class RepositoryFactoryTest : BaseTest, IDisposable
     {
-        public RepositoryFactoryTest()
+        public RepositoryFactoryTest() : base()
         {
 
         }
