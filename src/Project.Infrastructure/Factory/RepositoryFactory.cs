@@ -11,8 +11,10 @@ namespace Project.Infrastructure.Factory
         public RepositoryFactory()
         {
             _container = new LightInject.ServiceContainer();
+            
+            _container.Register<IProdutoRepository, ProdutoRepository>();
 
-            _container.Register(IProdutoRepository, ProdutoRepository);
+            
         }
 
 
