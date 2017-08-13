@@ -103,10 +103,16 @@ namespace Project.Tests.Infrastructure.Repository
         public void Should_get_connection_string_from_json_appsettings()
         {
             //Given
-            System.Console.WriteLine(base._configuration.Configuration);
+            const string key = "ConnectionStrings:LojaDatabase";
+            const string connection_string = "Host=localhost;Database=loja_db;Username=user_loja;Password=admin12";
+
             //When
-            
+            var result = base._configuration.Configuration[key];
+
             //Then
+            Assert.NotNull(result);
+            Assert.NotEmpty(result);
+            Assert.Equal(connection_string, result);
         }
     }
 }
