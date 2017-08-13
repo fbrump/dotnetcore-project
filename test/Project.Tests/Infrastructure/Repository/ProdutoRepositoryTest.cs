@@ -13,8 +13,8 @@ namespace Project.Tests.Infrastructure.Repository
 
     public class ProdutoRepositoryTest : IDisposable
     {
-        private readonly IProdutoRepository _repository;
-        private readonly LojaContext _context;
+        private IProdutoRepository _repository;
+        private LojaContext _context;
 
         public ProdutoRepositoryTest()
         {
@@ -24,20 +24,24 @@ namespace Project.Tests.Infrastructure.Repository
 
         public void Dispose()
         {
-            
+            _context = null;
+            _repository = null;
         }
 
         [Fact]
         public void Should_insert_new_product()
         {
+            //Given
             var produto = new Produto();
 
             produto.Nome = "harry potter and the philosopher's stone";
             produto.Categoria = "Livros";
             produto.Preco = 19.89;
 
+            //When
             _repository.Insert(produto);
             
+            //Then
             Assert.NotEqual(produto.Id, 0);
         }
 
@@ -45,31 +49,54 @@ namespace Project.Tests.Infrastructure.Repository
         public void Should_select_items()
         {
             //Given
-            var list = new List<Produto>();
+            IList<Produto> list = new List<Produto>();
 
             //When
-            using (var ctx = new LojaContext())
-            {
-                list = ctx.Produtos.ToList();
-            }
+            list = _repository.SelectAll();
         
             //Then
             Assert.True(list.Count() > 0);
         }
 
-        [Fact(Skip="Acceces repository")]
+        [Fact]
         public void Should_update_product()
         {
-            using (var ctx = new LojaContext())
-            {
-                var produto = ctx.Produtos.LastOrDefault();
+            //Given
+            const string nome = "Harry Potter - Update";
 
-                produto.Nome = "Harry Potter - Update";
+            var produtoUpdate = _repository.SelectAll().LastOrDefault();
 
-                ctx.Produtos.Update(produto);
-                ctx.SaveChanges();
-            }
+            produtoUpdate.Nome = nome;
 
+            _context = new LojaContext();
+            _repository = new ProdutoRepository(_context);
+            //When
+            _repository.Update(produtoUpdate);
+
+            //Then
+            Assert.Equal(produtoUpdate.Nome, nome);
+        }
+
+        [Fact(Skip="Accessing database")]
+        public void Should_delete_product()
+        {
+            //Given
+            var produto = _repository.SelectAll().FirstOrDefault();
+            int id = produto.Id;
+            
+            _context = new LojaContext();
+            _repository = new ProdutoRepository(_context);
+
+            //When
+            _repository.Delete(produto);
+
+            _context = new LojaContext();
+            _repository = new ProdutoRepository(_context);
+
+            produto = _repository.SelectById(id);
+
+            //Then
+            Assert.Null(produto);
         }
 
 

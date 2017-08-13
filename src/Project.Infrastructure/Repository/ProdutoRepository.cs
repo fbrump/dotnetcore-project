@@ -1,9 +1,11 @@
 namespace Project.Infrastructure.Repository
 {
+    using System.Linq;
+    using System.Collections;
     using System.Collections.Generic;
     using Context;
     using Interface;
-    using Project.Infrastructure.Entity;
+    using Entity;
 
     public class ProdutoRepository : IProdutoRepository
     {
@@ -13,7 +15,11 @@ namespace Project.Infrastructure.Repository
 
         public void Delete(Produto entity)
         {
-            throw new System.NotImplementedException();
+            using (var ctx = _context)
+            {
+                ctx.Produtos.Remove(entity);
+                ctx.SaveChanges();
+            }
         }
 
         public void Insert(Produto entity)
@@ -27,17 +33,36 @@ namespace Project.Infrastructure.Repository
 
         public IList<Produto> SelectAll()
         {
-            throw new System.NotImplementedException();
+            IList<Produto> list = new List<Produto>();
+
+            using (var ctx = _context)
+            {
+                list = ctx.Produtos.ToList();
+            }
+
+            return list;
         }
 
-        public IList<Produto> SelectById(int id)
+        public Produto SelectById(int id)
         {
-            throw new System.NotImplementedException();
+            var produto = new Produto();
+
+            using (var ctx = _context)
+            {
+                produto = ctx.Produtos.FirstOrDefault(t => t.Id == id);
+            }
+
+            return produto;
         }
 
         public void Update(Produto entity)
         {
-            throw new System.NotImplementedException();
+            using (var ctx = _context)
+            {
+                ctx.Produtos.Update(entity);
+                ctx.SaveChanges();
+            }
+
         }
     }
 }

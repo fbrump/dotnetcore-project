@@ -6,7 +6,7 @@ namespace Project.Infrastructure.Interface
     {
          IList<T> SelectAll ();
 
-         IList<T> SelectById(int id);
+         T SelectById(int id);
 
     }
 }
