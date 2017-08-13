@@ -3,6 +3,7 @@
     <ProjectReference Include="..\Project.Domain.Core\Project.Domain.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="LightInject" Version="5.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.2" />
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="1.1.1" />
   </ItemGroup>
