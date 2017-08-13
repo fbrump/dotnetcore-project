@@ -3,6 +3,8 @@ namespace Project.Tests.Infrastructure.Repository
     using System;
     using Project.Infrastructure.Context;
     using Project.Infrastructure.Entity;
+    using Project.Infrastructure.Interface;
+    using Project.Infrastructure.Repository;
     using Xunit;
     using System.Linq;
     using System.Collections;
@@ -11,18 +13,18 @@ namespace Project.Tests.Infrastructure.Repository
 
     public class ProdutoRepositoryTest : IDisposable
     {
+        private readonly IProdutoRepository _repository;
+        private readonly LojaContext _context;
+
         public ProdutoRepositoryTest()
         {
-            Console.WriteLine("========= ==================");
-            Console.WriteLine("========= TestFixtureSetUp");
-            Console.WriteLine("========= ==================");
+            _context = new LojaContext();
+            _repository = new ProdutoRepository(_context);
         }
 
         public void Dispose()
         {
-            Console.WriteLine("========= ==================");
-            Console.WriteLine("========= TestFixtureTearDown");
-            Console.WriteLine("========= ==================");
+            
         }
 
         [Fact]
@@ -30,16 +32,13 @@ namespace Project.Tests.Infrastructure.Repository
         {
             var produto = new Produto();
 
-            produto.Nome = "Harry Potter";
-            produto.Categoria = "Lrivros";
+            produto.Nome = "harry potter and the philosopher's stone";
+            produto.Categoria = "Livros";
             produto.Preco = 19.89;
 
-            using (var ctx = new LojaContext())
-            {
-                ctx.Produtos.Add(produto);
-                ctx.SaveChanges();
-            }
-
+            _repository.Insert(produto);
+            
+            Assert.NotEqual(produto.Id, 0);
         }
 
         [Fact]
@@ -58,7 +57,7 @@ namespace Project.Tests.Infrastructure.Repository
             Assert.True(list.Count() > 0);
         }
 
-        [Fact]
+        [Fact(Skip="Acceces repository")]
         public void Should_update_product()
         {
             using (var ctx = new LojaContext())
