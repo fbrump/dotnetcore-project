@@ -3,20 +3,32 @@ namespace Project.Infrastructure.Factory
     using LightInject;
     using Interface;
     using Repository;
+    using System;
+    using Project.Infrastructure.Context;
 
-    public class RepositoryFactory
+    sealed public class RepositoryFactory
     {
-        ServiceContainer _container;
+        static ServiceContainer _container;
 
-        public RepositoryFactory()
+        static RepositoryFactory()
         {
             _container = new LightInject.ServiceContainer();
             
-            _container.Register<IProdutoRepository, ProdutoRepository>();
+            // REGISTER ALL REPOSITORIES
+            _container.Register<IProdutoRepository>(factory => new ProdutoRepository(new LojaContext()));
 
-            
+            //_container.RegisterInstance<IProdutoRepository>(new ProdutoRepository(new LojaContext()));
+
+            //_container.Register<IProdutoRepository, ProdutoRepository>();
+
+            //_container.RegisterConstructorDependency<IProdutoRepository>((factory, parameterInfo) => new LojaContext());
         }
 
+        /// <summary>
+        /// Method that get one instance for Repostiory based on yout interface.
+        /// </summary>
+        /// <returns></returns>
+        public static T GetIntanciaOf<T>() => _container.GetInstance<T>();
 
     }
 }
