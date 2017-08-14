@@ -18,7 +18,11 @@ namespace Project.Infrastructure.Repository
 
         public void Insert(Compra entity)
         {
-            throw new System.NotImplementedException();
+            using (var ctx = _context)
+            {
+                ctx.Compras.Add(entity);
+                ctx.SaveChanges();
+            }
         }
 
         public IList<Compra> SelectAll()
