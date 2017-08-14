@@ -14,18 +14,14 @@ namespace Project.Tests.Infrastructure.Repository
     public class ProdutoRepositoryTest : BaseTest, IDisposable
     {
         private IProdutoRepository _repository;
-        private LojaContext _context;
-
+        
         public ProdutoRepositoryTest() : base()
         {
-            //_context = new LojaContext();
-            //_repository = new ProdutoRepository(_context);
             _repository = RepositoryFactory.GetIntanciaOf<IProdutoRepository>();
         }
 
         public void Dispose()
         {
-            _context = null;
             _repository = null;
         }
 
@@ -69,8 +65,7 @@ namespace Project.Tests.Infrastructure.Repository
 
             produtoUpdate.Nome = nome;
 
-            _context = new LojaContext();
-            _repository = new ProdutoRepository(_context);
+            _repository = RepositoryFactory.GetIntanciaOf<IProdutoRepository>();
             //When
             _repository.Update(produtoUpdate);
 
@@ -85,14 +80,12 @@ namespace Project.Tests.Infrastructure.Repository
             var produto = _repository.SelectAll().FirstOrDefault();
             int id = produto.Id;
             
-            _context = new LojaContext();
-            _repository = new ProdutoRepository(_context);
+            _repository = RepositoryFactory.GetIntanciaOf<IProdutoRepository>();
 
             //When
             _repository.Delete(produto);
 
-            _context = new LojaContext();
-            _repository = new ProdutoRepository(_context);
+            _repository = RepositoryFactory.GetIntanciaOf<IProdutoRepository>();
 
             produto = _repository.SelectById(id);
 
