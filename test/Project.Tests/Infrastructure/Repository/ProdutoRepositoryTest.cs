@@ -33,7 +33,8 @@ namespace Project.Tests.Infrastructure.Repository
 
             produto.Nome = "harry potter and the philosopher's stone";
             produto.Categoria = "Livros";
-            produto.Preco = 19.89;
+            produto.PrecoUnitario = 19.89;
+            produto.Unidade = "";
 
             //When
             _repository.Insert(produto);
