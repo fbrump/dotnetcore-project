@@ -9,7 +9,7 @@ namespace Project.Tests.Infrastructure.Repository
     using System.Linq;
     using System.Collections;
     using System.Collections.Generic;
-
+    using Project.Infrastructure.Factory;
 
     public class ProdutoRepositoryTest : BaseTest, IDisposable
     {
@@ -18,8 +18,9 @@ namespace Project.Tests.Infrastructure.Repository
 
         public ProdutoRepositoryTest() : base()
         {
-            _context = new LojaContext();
-            _repository = new ProdutoRepository(_context);
+            //_context = new LojaContext();
+            //_repository = new ProdutoRepository(_context);
+            _repository = RepositoryFactory.GetIntanciaOf<IProdutoRepository>();
         }
 
         public void Dispose()
