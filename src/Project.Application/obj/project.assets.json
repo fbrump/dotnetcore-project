@@ -1742,12 +1742,6 @@
           "NETStandard.Library": "1.6.1",
           "Project.Domain.Core": "1.0.0",
           "Project.Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/netstandard1.4/Project.Domain.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netstandard1.4/Project.Domain.dll": {}
         }
       },
       "Project.Domain.Core/1.0.0": {
@@ -1755,12 +1749,6 @@
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
           "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "bin/placeholder/netstandard1.4/Project.Domain.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netstandard1.4/Project.Domain.Core.dll": {}
         }
       },
       "Project.Infrastructure/1.0.0": {
@@ -1772,12 +1760,6 @@
           "NETStandard.Library": "1.6.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.1",
           "Project.Domain.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/netstandard1.4/Project.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netstandard1.4/Project.Infrastructure.dll": {}
         }
       }
     }
@@ -6052,14 +6034,11 @@
       "projectUniqueName": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Application/Project.Application.csproj",
       "projectName": "Project.Application",
       "projectPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Application/Project.Application.csproj",
-      "outputPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Application/obj/",
+      "outputPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Application/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
-      "files": {
-        "lib/netstandard1.4/Project.Application.dll": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Application/bin/placeholder/netstandard1.4/Project.Application.dll"
-      },
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {

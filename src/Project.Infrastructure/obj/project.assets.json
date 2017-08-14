@@ -1740,12 +1740,6 @@
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
           "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "bin/placeholder/netstandard1.4/Project.Domain.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netstandard1.4/Project.Domain.Core.dll": {}
         }
       }
     }
@@ -6012,14 +6006,11 @@
       "projectUniqueName": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Infrastructure/Project.Infrastructure.csproj",
       "projectName": "Project.Infrastructure",
       "projectPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Infrastructure/Project.Infrastructure.csproj",
-      "outputPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Infrastructure/obj/",
+      "outputPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Infrastructure/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
-      "files": {
-        "lib/netstandard1.4/Project.Infrastructure.dll": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Infrastructure/bin/placeholder/netstandard1.4/Project.Infrastructure.dll"
-      },
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {

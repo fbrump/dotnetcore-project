@@ -1740,12 +1740,6 @@
         "framework": ".NETStandard,Version=v1.4",
         "dependencies": {
           "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "bin/placeholder/netstandard1.4/Project.Domain.Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netstandard1.4/Project.Domain.Core.dll": {}
         }
       },
       "Project.Infrastructure/1.0.0": {
@@ -1757,12 +1751,6 @@
           "NETStandard.Library": "1.6.1",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "1.1.1",
           "Project.Domain.Core": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/netstandard1.4/Project.Infrastructure.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/netstandard1.4/Project.Infrastructure.dll": {}
         }
       }
     }
@@ -6032,14 +6020,11 @@
       "projectUniqueName": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain/Project.Domain.csproj",
       "projectName": "Project.Domain",
       "projectPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain/Project.Domain.csproj",
-      "outputPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain/obj/",
+      "outputPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain/obj",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
-      "files": {
-        "lib/netstandard1.4/Project.Domain.dll": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain/bin/placeholder/netstandard1.4/Project.Domain.dll"
-      },
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {
