@@ -130,8 +130,13 @@ namespace Project.Tests.Infrastructure.Repository
             //When
             _repository.Insert(produto);
 
+            var _repositoryPurchase = RepositoryFactory.GetIntanciaOf<ICompraRepository>();
+
+            _repositoryPurchase.Insert(compra);
+            
             //Then
             Assert.NotNull(produto.Id);
+            Assert.NotNull(compra.Id);
 
         }
     }

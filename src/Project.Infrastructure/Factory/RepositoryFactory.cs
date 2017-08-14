@@ -16,6 +16,7 @@ namespace Project.Infrastructure.Factory
             
             // REGISTER ALL REPOSITORIES
             _container.Register<IProdutoRepository>(factory => new ProdutoRepository(GetContext()));
+            _container.Register<ICompraRepository>(factory => new CompraRepository(GetContext()));
             
         }
 
