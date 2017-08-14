@@ -121,6 +121,12 @@ namespace Project.Tests.Infrastructure.Repository
             produto.Unidade = "Unidade";
             produto.Categoria = "Padaria";
 
+            var compra = new Compra();
+
+            compra.Quantidade = 6;
+            compra.Produto = produto;
+            compra.Preco = produto.PrecoUnitario * compra.Quantidade;
+
             //When
             _repository.Insert(produto);
 

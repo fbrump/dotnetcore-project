@@ -10,6 +10,6 @@ namespace Project.Infrastructure.Entity
 
         public Produto Produto { get; set; }
 
-        public decimal Preco { get; set; }
+        public double Preco { get; set; }
     }
 }
