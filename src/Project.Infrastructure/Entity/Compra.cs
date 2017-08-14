@@ -6,6 +6,8 @@ namespace Project.Infrastructure.Entity
 
         public int Quantidade { get; set; }
 
+        public int ProdutoId { get; set; }
+
         public Produto Produto { get; set; }
 
         public decimal Preco { get; set; }

@@ -111,7 +111,7 @@ namespace Project.Tests.Infrastructure.Repository
         }
 
         [Fact]
-        public void Should_insert_bread_product()
+        public void Should_insert_bread_product_with_purchase()
         {
             //Given
             var produto = new Produto();

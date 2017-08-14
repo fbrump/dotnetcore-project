@@ -8,6 +8,8 @@ namespace Project.Infrastructure.Context
     {
         public DbSet<Produto> Produtos { get; set; }
 
+        public DbSet<Compra> Compras { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host=localhost;Database=loja_db;Username=user_loja;Password=admin123");
