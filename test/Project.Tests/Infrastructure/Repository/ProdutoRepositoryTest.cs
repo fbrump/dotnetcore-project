@@ -34,7 +34,7 @@ namespace Project.Tests.Infrastructure.Repository
             produto.Nome = "harry potter and the philosopher's stone";
             produto.Categoria = "Livros";
             produto.PrecoUnitario = 19.89;
-            produto.Unidade = "";
+            produto.Unidade = "Unidade";
 
             //When
             _repository.Insert(produto);
@@ -108,6 +108,25 @@ namespace Project.Tests.Infrastructure.Repository
             Assert.NotNull(result);
             Assert.NotEmpty(result);
             Assert.Equal(connection_string, result);
+        }
+
+        [Fact]
+        public void Should_insert_bread_product()
+        {
+            //Given
+            var produto = new Produto();
+
+            produto.Nome = "Pão Francês";
+            produto.PrecoUnitario = 0.40;
+            produto.Unidade = "Unidade";
+            produto.Categoria = "Padaria";
+
+            //When
+            _repository.Insert(produto);
+
+            //Then
+            Assert.NotNull(produto.Id);
+
         }
     }
 }
