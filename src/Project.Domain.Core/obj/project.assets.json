@@ -3711,11 +3711,14 @@
       "projectUniqueName": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/Project.Domain.Core.csproj",
       "projectName": "Project.Domain.Core",
       "projectPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/Project.Domain.Core.csproj",
-      "outputPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/obj",
+      "outputPath": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/obj/",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netstandard1.4"
       ],
+      "files": {
+        "lib/netstandard1.4/Project.Domain.Core.dll": "/Users/Brum/Documents/work/_git/core-vscode/src/Project.Domain.Core/bin/placeholder/netstandard1.4/Project.Domain.Core.dll"
+      },
       "frameworks": {
         "netstandard1.4": {
           "projectReferences": {}
