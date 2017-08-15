@@ -7,8 +7,7 @@ namespace Project.Infrastructure.Repository.Base
     using System.Linq.Expressions;
     using Context;
     using Interface.Base;
-    using Entity.Base;
-
+    using Project.Infrastructure.Entity.Base;
     public class BaseRepository<T> : ICRUDRepository<T>  
         where T : class, IEntity
     {
@@ -79,7 +78,6 @@ namespace Project.Infrastructure.Repository.Base
         {
             using (var ctx = _context)
             {
-                //ctx.Entry(entity).State = System.Data.EntityState.Modified;
                 ctx.Update<T>(entity);
                 ctx.SaveChanges();
             }

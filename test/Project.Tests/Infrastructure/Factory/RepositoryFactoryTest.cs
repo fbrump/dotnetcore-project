@@ -44,5 +44,18 @@ namespace Project.Tests.Infrastructure.Factory
             Assert.IsType<CompraRepository>(instancia);
         }
 
+        [Fact]
+        public void Should_instance_new_promotion_repository()
+        {
+            //Given
+            
+            //When
+            var instancia = RepositoryFactory.GetIntanciaOf<IPromocaoRepository>();
+
+            //Then
+            Assert.NotNull(instancia);
+            Assert.IsType<PromocaoRepository>(instancia);
+        }
+
     }
 }

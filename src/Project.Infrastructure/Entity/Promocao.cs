@@ -2,7 +2,7 @@ namespace Project.Infrastructure.Entity
 {
     using System;
     using System.Collections.Generic;
-    using Entity.Base;
+    using Project.Infrastructure.Entity.Base;
 
     public class Promocao : IEntity
     {
