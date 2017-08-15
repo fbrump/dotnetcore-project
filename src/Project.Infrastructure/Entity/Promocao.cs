@@ -2,8 +2,9 @@ namespace Project.Infrastructure.Entity
 {
     using System;
     using System.Collections.Generic;
+    using Entity.Base;
 
-    public class Promocao
+    public class Promocao : IEntity
     {
         public int Id { get; set; } 
         public string Descricao { get; set; }

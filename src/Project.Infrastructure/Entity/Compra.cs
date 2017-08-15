@@ -1,6 +1,7 @@
 namespace Project.Infrastructure.Entity
 {
-    public class Compra
+    using Entity.Base;
+    public class Compra : IEntity
     {
         public int Id { get; set; }
 

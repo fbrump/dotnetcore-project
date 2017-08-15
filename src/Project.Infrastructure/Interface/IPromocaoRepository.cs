@@ -1,7 +1,7 @@
 namespace Project.Infrastructure.Interface
 {
     using Entity;
-    using Base;
+    using Interface.Base;
     public interface IPromocaoRepository : ICRUDRepository<Promocao>
     {
          

@@ -1,6 +1,7 @@
 namespace Project.Infrastructure.Entity
 {
-    public class Produto
+    using Entity.Base;
+    public class Produto : IEntity
     {
         public int Id { get; set; }
         public string Nome { get; set; }

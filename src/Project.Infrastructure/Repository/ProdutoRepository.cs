@@ -6,63 +6,62 @@ namespace Project.Infrastructure.Repository
     using Context;
     using Interface;
     using Entity;
+    using Repository.Base;
 
-    public class ProdutoRepository : IProdutoRepository
+    public class ProdutoRepository : BaseRepository<Produto>, IProdutoRepository
     {
-        private LojaContext _context;
-        
-        public ProdutoRepository(LojaContext context) => _context = context;
+        public ProdutoRepository(LojaContext context) :base(context) { }
 
-        public void Delete(Produto entity)
-        {
-            using (var ctx = _context)
-            {
-                ctx.Produtos.Remove(entity);
-                ctx.SaveChanges();
-            }
-        }
+        // public void Delete(Produto entity)
+        // {
+        //     using (var ctx = _context)
+        //     {
+        //         ctx.Produtos.Remove(entity);
+        //         ctx.SaveChanges();
+        //     }
+        // }
 
-        public void Insert(Produto entity)
-        {
-            using (var ctx = _context)
-            {
-                ctx.Produtos.Add(entity);
-                ctx.SaveChanges();
-            }
-        }
+        // public void Insert(Produto entity)
+        // {
+        //     using (var ctx = _context)
+        //     {
+        //         ctx.Produtos.Add(entity);
+        //         ctx.SaveChanges();
+        //     }
+        // }
 
-        public IList<Produto> SelectAll()
-        {
-            IList<Produto> list = new List<Produto>();
+        // public IList<Produto> SelectAll()
+        // {
+        //     IList<Produto> list = new List<Produto>();
 
-            using (var ctx = _context)
-            {
-                list = ctx.Produtos.ToList();
-            }
+        //     using (var ctx = _context)
+        //     {
+        //         list = ctx.Produtos.ToList();
+        //     }
 
-            return list;
-        }
+        //     return list;
+        // }
 
-        public Produto SelectById(int id)
-        {
-            var produto = new Produto();
+        // public Produto SelectById(int id)
+        // {
+        //     var produto = new Produto();
 
-            using (var ctx = _context)
-            {
-                produto = ctx.Produtos.FirstOrDefault(t => t.Id == id);
-            }
+        //     using (var ctx = _context)
+        //     {
+        //         produto = ctx.Produtos.FirstOrDefault(t => t.Id == id);
+        //     }
 
-            return produto;
-        }
+        //     return produto;
+        // }
 
-        public void Update(Produto entity)
-        {
-            using (var ctx = _context)
-            {
-                ctx.Produtos.Update(entity);
-                ctx.SaveChanges();
-            }
+        // public void Update(Produto entity)
+        // {
+        //     using (var ctx = _context)
+        //     {
+        //         ctx.Produtos.Update(entity);
+        //         ctx.SaveChanges();
+        //     }
 
-        }
+        // }
     }
 }
