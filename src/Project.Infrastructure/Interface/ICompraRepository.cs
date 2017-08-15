@@ -1,8 +1,9 @@
 namespace Project.Infrastructure.Interface
 {
     using Entity;
+    using Base;
     
-    public interface ICompraRepository : IRepositoryInsert<Compra>, IRepositorySelect<Compra>, IRepositoryDelete<Compra>, IRepositoryUpdate<Compra>
+    public interface ICompraRepository : ICRUDRepository<Compra>
     {
          
     }

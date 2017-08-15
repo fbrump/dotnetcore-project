@@ -1,4 +1,4 @@
-namespace Project.Infrastructure.Interface
+namespace Project.Infrastructure.Interface.Base
 {
     using System.Collections.Generic;
 

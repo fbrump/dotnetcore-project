@@ -1,4 +1,4 @@
-namespace Project.Infrastructure.Interface
+namespace Project.Infrastructure.Interface.Base
 {
     public interface IRepositoryInsert<T> : IRepository<T>
     {
